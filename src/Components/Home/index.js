@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-
+import {connect} from 'react-redux'
 class Home extends Component{
 	constructor(){
 		super();
@@ -18,4 +18,14 @@ class Home extends Component{
 	}
 }
 
-export default Home
+export default connect(
+	null
+	,{
+		changeNavbar(){
+			return {
+				type : "changeNavbar",
+				payload : "Normal"
+			}
+		}
+	}
+	)(Home)

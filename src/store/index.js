@@ -3,9 +3,10 @@ import thunk from 'redux-thunk'
 import reduxpromise from 'redux-promise'
 
 import changeNavbar from './reducers/changeNavbar'
-
+import changeTitle from './reducers/changeTitle'
 var reducer = combineReducers({
-	changeNavbar
+	changeNavbar,
+	changeTitle
 })
 
 
