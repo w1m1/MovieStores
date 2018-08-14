@@ -1,24 +1,44 @@
 import React,{Component} from 'react'
-import {NavLink} from 'react-router-dom'
+import NormalNavbar from './NormalNavbar'
+import MovieListNavbar from './MovieListNavbar'
+import DetailNavbar from './DetailNavbar'
+
+
+import {connect} from "react-redux";
 
 class Navbar extends Component{
 	constructor(){
 		super();
 		this.state = {
-
+			who : "Normal"
 		}
 	}
 	render(){
 		return (
 			<div id="Navbar">
-				Navbar
-				<NavLink to="/index">首页</NavLink>
-				<NavLink to="/cinemalist">购票</NavLink>
-				<NavLink to="/mine">我的</NavLink>
+			{
+				this.state.who==="Normal"?
+				<NormalNavbar/>
+				:this.state.who==="Detail"?
+				<DetailNavbar/>
+				:<MovieListNavbar/>
+			}
 			</div>
 
 			)
 	}
+	componentWillReceiveProps(props){
+		console.log(props);
+		this.setState({
+			who : props.changeNavbar
+		})
+	}
 }
 
-export default Navbar
+export default connect(
+		state=>{
+			return {
+				changeNavbar : state.changeNavbar
+			}
+		},null
+	)(Navbar)

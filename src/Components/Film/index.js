@@ -1,5 +1,7 @@
 import React,{Component} from 'react'
 import {NavLink} from 'react-router-dom'
+import {connect} from 'react-redux'
+
 
 class Film extends Component{
 	constructor(){
@@ -12,13 +14,25 @@ class Film extends Component{
 		return (
 			<div id="Film">
 				Film
-				<NavLink to="/film/nowplaying">NowPlaying</NavLink>
-				<NavLink to="/film/comingsoon">ComingSoon</NavLink>
+				
 				{this.props.children}
 			</div>
 
 			)
 	}
+	componentWillMount(){
+		this.props.changeNavbar("MovieList")
+	}
 }
 
-export default Film
+export default connect(
+	null,
+	{
+		changeNavbar(data){
+			return {
+				type : "changeNavbar",
+				payload : data
+			}
+		}
+	}
+	)(Film)
