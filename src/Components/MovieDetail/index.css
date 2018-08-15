@@ -1,0 +1,14 @@
+#MovieStore .head {
+  width: 100%;
+  background: pink;
+  position: absolute; }
+  #MovieStore .head .intro {
+    position: relative;
+    top: 40px;
+    left: 0;
+    display: flex;
+    justify-content: space-between; }
+    #MovieStore .head .intro .img {
+      width: 30%; }
+      #MovieStore .head .intro .img img {
+        width: 100%; }

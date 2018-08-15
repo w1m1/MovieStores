@@ -23,5 +23,13 @@
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
+  },
+  "proxy":{
+    "/Service":{
+      "target": "https://m.mtime.cn", 
+      "host":"m.mtime.cn",
+      "changeOrigin":true
+    }
   }
+
 }
