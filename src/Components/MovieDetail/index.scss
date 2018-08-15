@@ -34,8 +34,12 @@
 			}
 			.right{
 				color:#000;
+				h2{
+					color:#fff;
+					padding-bottom:5px;
+				}
 				h3{
-					// color:black;
+					color:#fff;
 					padding-bottom:30px;
 				}
 				.min{
@@ -108,4 +112,29 @@
 
 		}
 	}
+
+	.content{
+		.brief{
+			width:100%;
+			padding:20px;
+			line-height:1.5;
+			font-size:16px;
+			color:#333;
+			background:#fff;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 3;
+			text-overflow:ellipsis;
+	
+		}
+		.changeword{
+			width:100%;
+			height:20px;
+			line-height:20px;
+			text-align:center;
+			background:#eee;
+			font-size:20px;
+		}
+	}
+	
 }
