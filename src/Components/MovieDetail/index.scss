@@ -1,21 +1,105 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
 #MovieStore{
+
 	.head{
+		padding:0 20px;
 		width:100%;
-		background:pink;
-		position:absolute;
+		// position:absolute;
+		font-size:14px;
+
 		.intro{
-			position:relative;
-			top: 40px;
-			left:0;
+			// position:relative;
+			// top: 0px;
+			// left:0;
 			display:flex;
-			justify-content:space-between;
+			justify-content:space-around;
 			.img{
-				width:30%;
+				width:144px;
+
+				padding-right:10px;
+
 				img{
 					width:100%;
 				}
 			}
+			.right{
+				color:#000;
+				h3{
+					// color:black;
+					padding-bottom:30px;
+				}
+				.min{
+					width:100%;
+					position:absolute;
+					span{
+						color:#659d0e;
+
+					}
+					.store{
+						display:block;
+						position:relative;
+						width:33px;
+						height:33px;
+						background:#659d0e;
+						line-height:40px;
+						text-align:center;
+						top:-34px;
+						right:-150px;
+						color:#fff;
+					}
+				}
+					.xiju{
+						margin-top:22px;
+					}
+				.want,.com{
+					display:inline-block;
+					font-size:16px;
+					width:85px;
+					height:40px;
+					border-radius:20px;
+					line-height:40px;
+					text-align:center;
+					border:1px solid #ccc;
+				}
+				.com{
+					color:#659d0e;
+					border:1px solid #659d0e;
+					margin-left:10px;
+				}
+			}
+			p{
+				padding-bottom:10px;
+			}
 		}
 
+
+	}
+	.word{
+		width:100%;
+		text-align:center;
+		color:#ff8600;
+		padding:10px 0;
+		font-size:16px;
+	}
+	.btn{
+		display:block;
+		width:100%;
+		height:45px;
+		line-height:45px;
+		font-size:20px;
+		font-weight:bold;
+		color:white;
+		text-align:center;
+		padding:0 20px;
+		span{
+			display:block;
+			background:#ff8600;
+			border-radius:20px;
+
+		}
 	}
 }

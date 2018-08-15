@@ -1,0 +1,35 @@
+#Home .moviebox {
+  width: 100%; }
+  #Home .moviebox .head {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding: 0 15px; }
+    #Home .moviebox .head h2 {
+      float: left; }
+    #Home .moviebox .head span {
+      float: right;
+      font-size: 26px;
+      font-weight: bold; }
+  #Home .moviebox .movies {
+    position: relative;
+    float: left;
+    width: .86rem;
+    margin: 0 1%; }
+    #Home .moviebox .movies img {
+      width: .86rem;
+      height: 1.2rem; }
+    #Home .moviebox .movies p {
+      width: 100%;
+      height: .3rem;
+      line-height: .3rem;
+      text-align: center;
+      overflow: hidden; }
+    #Home .moviebox .movies span {
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      color: white;
+      background: #659d0e;
+      padding: 5px; }
