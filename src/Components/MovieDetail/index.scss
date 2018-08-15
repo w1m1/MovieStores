@@ -1,22 +1,28 @@
 *{
-	padding:0;
-	margin:0;
 	box-sizing:border-box;
 }
 #MovieStore{
-
-	.head{
-		padding:0 20px;
+	.bg{
 		width:100%;
-		// position:absolute;
-		font-size:14px;
-
+		height:120px;
+		background-repeat:no-repeat;
+		background-position:0 -95px;
+		background-size:cover;
+		opacity:.7;
+		filter:blur(5px);
+	}
+	.big{
+		position:relative;
 		.intro{
-			// position:relative;
-			// top: 0px;
-			// left:0;
+			padding:0 20px;
+			font-size:14px;
+			width:100%;
 			display:flex;
 			justify-content:space-around;
+			position:absolute;
+			top:-55px;
+			left:0;
+
 			.img{
 				width:144px;
 
@@ -34,27 +40,25 @@
 				}
 				.min{
 					width:100%;
-					position:absolute;
+					position:relative;
 					span{
 						color:#659d0e;
 
 					}
 					.store{
 						display:block;
-						position:relative;
+						position:absolute;
 						width:33px;
 						height:33px;
 						background:#659d0e;
 						line-height:40px;
 						text-align:center;
-						top:-34px;
-						right:-150px;
+						top:-18px;
+						right:0;
 						color:#fff;
 					}
 				}
-					.xiju{
-						margin-top:22px;
-					}
+					
 				.want,.com{
 					display:inline-block;
 					font-size:16px;
@@ -75,15 +79,17 @@
 				padding-bottom:10px;
 			}
 		}
-
-
 	}
+
+
+
 	.word{
 		width:100%;
 		text-align:center;
 		color:#ff8600;
 		padding:10px 0;
 		font-size:16px;
+		margin-top:140px;
 	}
 	.btn{
 		display:block;

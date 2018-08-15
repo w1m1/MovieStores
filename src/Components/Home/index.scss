@@ -1,6 +1,7 @@
 #Home{
 	.moviebox{
 		width:100%;
+		overflow:hidden;
 		.head{
 			width:100%;
 			height:50px;
@@ -39,6 +40,32 @@
 				color:white;
 				background:#659d0e;
 				padding:5px;
+			}
+		}
+	}
+	.duiqi{
+		width:100%;
+	}
+	.daynews{
+		box-sizing:border-box;
+		padding:10px;
+		.head{
+			height:50px;
+			line-height:50px;
+		}
+		.news{
+			overflow:hidden;
+			margin-top:10px;
+			div.left{
+				width:40%;
+				img{
+					width:100%;
+				}
+			}
+			div.right{
+				box-sizing:border-box;
+				width:60%;
+				padding:0 10px;
 			}
 		}
 	}

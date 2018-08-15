@@ -49,7 +49,7 @@ const router = (
 					<Route path="/selectseat" component={SelectSeat}/>
 					<Route path="/pay" component={Pay}/>
 					<Route path="/shop" component={Shop}/>
-					<Route path="/moviedetail" component={MovieDetail}/>
+					<Route path="/moviedetail/:id" component={MovieDetail}/>
 					
 					<Redirect from="*" to="/index"/>
 				</Switch>

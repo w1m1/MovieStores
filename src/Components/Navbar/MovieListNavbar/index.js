@@ -13,8 +13,8 @@ class MovieListNavbar extends Component{
 		return (
 			<div id="MovieListNavbar">
 				<div className="iconfont icon-fanhui left" onClick={this.goHistory.bind(this)}></div>
-				<NavLink to="/index">正在热映</NavLink>
-				<NavLink to="/cinemalist">即将上映</NavLink>
+				<NavLink to="/film/nowplaying">正在热映</NavLink>
+				<NavLink to="/film/comingsoon">即将上映</NavLink>
 			</div>
 
 			)

@@ -1,43 +1,52 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box; }
 
-#MovieStore .head {
-  padding: 0 20px;
+#MovieStore .bg {
   width: 100%;
-  font-size: 14px; }
-  #MovieStore .head .intro {
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: 0 -95px;
+  background-size: cover;
+  opacity: .7;
+  filter: blur(5px); }
+
+#MovieStore .big {
+  position: relative; }
+  #MovieStore .big .intro {
+    padding: 0 20px;
+    font-size: 14px;
+    width: 100%;
     display: flex;
-    justify-content: space-around; }
-    #MovieStore .head .intro .img {
+    justify-content: space-around;
+    position: absolute;
+    top: -55px;
+    left: 0; }
+    #MovieStore .big .intro .img {
       width: 144px;
       padding-right: 10px; }
-      #MovieStore .head .intro .img img {
+      #MovieStore .big .intro .img img {
         width: 100%; }
-    #MovieStore .head .intro .right {
+    #MovieStore .big .intro .right {
       color: #000; }
-      #MovieStore .head .intro .right h3 {
+      #MovieStore .big .intro .right h3 {
         padding-bottom: 30px; }
-      #MovieStore .head .intro .right .min {
+      #MovieStore .big .intro .right .min {
         width: 100%;
-        position: absolute; }
-        #MovieStore .head .intro .right .min span {
+        position: relative; }
+        #MovieStore .big .intro .right .min span {
           color: #659d0e; }
-        #MovieStore .head .intro .right .min .store {
+        #MovieStore .big .intro .right .min .store {
           display: block;
-          position: relative;
+          position: absolute;
           width: 33px;
           height: 33px;
           background: #659d0e;
           line-height: 40px;
           text-align: center;
-          top: -34px;
-          right: -150px;
+          top: -18px;
+          right: 0;
           color: #fff; }
-      #MovieStore .head .intro .right .xiju {
-        margin-top: 22px; }
-      #MovieStore .head .intro .right .want, #MovieStore .head .intro .right .com {
+      #MovieStore .big .intro .right .want, #MovieStore .big .intro .right .com {
         display: inline-block;
         font-size: 16px;
         width: 85px;
@@ -46,11 +55,11 @@
         line-height: 40px;
         text-align: center;
         border: 1px solid #ccc; }
-      #MovieStore .head .intro .right .com {
+      #MovieStore .big .intro .right .com {
         color: #659d0e;
         border: 1px solid #659d0e;
         margin-left: 10px; }
-    #MovieStore .head .intro p {
+    #MovieStore .big .intro p {
       padding-bottom: 10px; }
 
 #MovieStore .word {
@@ -58,7 +67,8 @@
   text-align: center;
   color: #ff8600;
   padding: 10px 0;
-  font-size: 16px; }
+  font-size: 16px;
+  margin-top: 140px; }
 
 #MovieStore .btn {
   display: block;
