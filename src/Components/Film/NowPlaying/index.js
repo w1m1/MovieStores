@@ -25,24 +25,52 @@ class NowPlaying extends Component{
 								<div className="movie" key={data.id}>
 									<div className="left">
 										<img src={data.img}/>
-										<i className="isHot"></i>
+										{
+											data.isHot?
+											<i className="isHot"></i>
+											:null
+										}
 									</div>
 									<div className="right">
 										<div>
 											<h2>{data.t}</h2>
 											{
 												data.r>1?
-												<span>{data.r}</span>
+												<span>{
+													parseInt(data.r)==parseFloat(data.r)?
+													data.r +".0"
+													:data.r
+												}</span>
 												:null
 											}
 										</div>
 										<p>“{data.commonSpecial}</p>
+										{
+											data.isDMAX?
+											<span className="isHas">DMAX</span>
+											:null
+										}
+										{
+											data.isIMAX?
+											<span className="isHas">IMAX</span>
+											:null
+										}
+										{
+											data.is3D?
+											<span className="isHas">3D</span>
+											:null
+										}
+										{
+											data.isIMAX3D?
+											<span className="isHas">IMAX3D</span>
+											:null
+										}
 										<div className="leftbutton">
 											{data.NearestCinemaCount}家影院上映{data.NearestShowtimeCount}场
 										</div>
-										<div className="rightbutton" onClick={this.goBuyList.bind(this,data.id)}>
-											购票
-										</div>
+									</div>
+									<div className="rightbutton" onClick={this.goBuyList.bind(this,data.id)}>
+										购票
 									</div>
 								</div>
 								)
