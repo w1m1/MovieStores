@@ -1,0 +1,51 @@
+#NowPlaying{
+	.movieList{
+		.movie{
+			overflow:hidden;
+			box-sizing:border-box;
+			padding:15px;
+			div.left{
+				width:30%;
+				position:relative;
+				img{
+					width:100%;
+				}
+				i.isHot{
+					position:absolute;
+					top:0;
+					left:0;
+					width:40px;
+					height:40px;
+					background:url("http://static1.mtime.cn/html5/20180727153608/images/2014/i_hot.png") no-repeat center;
+					background-size:40px;
+				}
+			}
+			div.right{
+				width:70%;
+				box-sizing:border-box;
+				padding:0 15px;
+				div{
+					overflow:hidden;
+					h2{
+						float:left;
+						max-width:80%;
+						overflow:hidden;
+						height:23px;
+					}
+					span{
+						margin-left:5px;
+						margin-top:2px;
+						float:left;
+						padding:3px 2px;
+						color:white;
+						background:#659d0e;
+					}
+				}
+				p{
+					color:#659d0e;
+					line-height:50px;
+				}
+			}
+		}
+	}
+}

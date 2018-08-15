@@ -18,7 +18,7 @@ class Home extends Component{
 		return (
 			<div id="Home">
 				<div className="moviebox">
-					<div className="head" onClick={this.toFilm.bind(this)}>
+					<div className="head" onClick={this.toFilm.bind(this,"")}>
 						<h2>正在热映({this.state.nowplaying.length}部)</h2>
 						<span className="iconfont icon-jiantou1"></span>
 					</div>
