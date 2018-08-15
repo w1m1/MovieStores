@@ -41,9 +41,10 @@ const router = (
 							)
 					}}/>
 					<Route path="/cinemalist" component={CinemaList}/>
+					<Route path="/cinemalist/:movieid" component={CinemaList}/>
 					<Route path="/mine" component={Mine}/>
-					<Route path="/detail/movie/:movieId/cinema/:cinemaId" component={Detail}/>
-					<Route path="/detail/movie/:movieId" component={Detail}/>
+					<Route path="/detail/cinema/:cinemaId/movie/:movieId" component={Detail}/>
+					<Route path="/detail/cinema/:cinemaId" component={Detail}/>
 					<Route path="/login" component={Login}/>
 					<Route path="/reg" component={Reg}/>
 					<Route path="/selectseat" component={SelectSeat}/>
