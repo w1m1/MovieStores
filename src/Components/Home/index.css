@@ -1,5 +1,6 @@
 #Home .moviebox {
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   #Home .moviebox .head {
     width: 100%;
     height: 50px;
@@ -33,3 +34,24 @@
       color: white;
       background: #659d0e;
       padding: 5px; }
+
+#Home .duiqi {
+  width: 100%; }
+
+#Home .daynews {
+  box-sizing: border-box;
+  padding: 10px; }
+  #Home .daynews .head {
+    height: 50px;
+    line-height: 50px; }
+  #Home .daynews .news {
+    overflow: hidden;
+    margin-top: 10px; }
+    #Home .daynews .news div.left {
+      width: 40%; }
+      #Home .daynews .news div.left img {
+        width: 100%; }
+    #Home .daynews .news div.right {
+      box-sizing: border-box;
+      width: 60%;
+      padding: 0 10px; }

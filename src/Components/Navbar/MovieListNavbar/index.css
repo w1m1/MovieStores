@@ -5,10 +5,13 @@
   text-align: center;
   background: #1c2635;
   color: white; }
+  #MovieListNavbar .focus {
+    background: #1c2635 !important;
+    color: white !important; }
   #MovieListNavbar div.left {
     width: 10%; }
   #MovieListNavbar a {
     display: block;
     width: 45%;
     float: left;
-    color: white; }
+    color: gray; }

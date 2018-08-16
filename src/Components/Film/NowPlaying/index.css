@@ -1,0 +1,63 @@
+#NowPlaying .movieList .movie {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 15px;
+  position: relative; }
+  #NowPlaying .movieList .movie div.left {
+    width: 30%;
+    position: relative; }
+    #NowPlaying .movieList .movie div.left img {
+      width: 100%; }
+    #NowPlaying .movieList .movie div.left i.isHot {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background: url("http://static1.mtime.cn/html5/20180727153608/images/2014/i_hot.png") no-repeat center;
+      background-size: 40px; }
+  #NowPlaying .movieList .movie div.right {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    position: relative;
+    padding-bottom: 20px; }
+    #NowPlaying .movieList .movie div.right div {
+      overflow: hidden; }
+      #NowPlaying .movieList .movie div.right div h2 {
+        float: left;
+        max-width: 80%;
+        overflow: hidden;
+        height: 23px; }
+      #NowPlaying .movieList .movie div.right div span {
+        margin-left: 5px;
+        margin-top: 2px;
+        float: left;
+        padding: 3px 2px;
+        color: white;
+        background: #659d0e; }
+    #NowPlaying .movieList .movie div.right p {
+      color: #659d0e;
+      line-height: 50px;
+      height: 50px;
+      width: 100%;
+      overflow: hidden; }
+    #NowPlaying .movieList .movie div.right span.isHas {
+      color: white;
+      background: #659d0e;
+      padding: 2px 5px;
+      line-height: 40px;
+      margin-left: 5px; }
+    #NowPlaying .movieList .movie div.right div.leftbutton {
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      color: gray; }
+  #NowPlaying .movieList .movie div.rightbutton {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 18px;
+    color: white;
+    background: orange;
+    border-radius: 15px; }

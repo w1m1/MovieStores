@@ -13,7 +13,6 @@ class Film extends Component{
 	render(){
 		return (
 			<div id="Film">
-				Film
 				
 				{this.props.children}
 			</div>

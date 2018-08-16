@@ -22,6 +22,7 @@ class Navbar extends Component{
 				:this.state.who==="Detail"?
 				<DetailNavbar/>
 				:<MovieListNavbar/>
+
 			}
 			</div>
 

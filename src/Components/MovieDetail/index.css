@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box; }
+
+#MovieStore .bg {
+  width: 100%;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: 0 -95px;
+  background-size: cover;
+  opacity: .7;
+  filter: blur(5px); }
+
+#MovieStore .big {
+  position: relative; }
+  #MovieStore .big .intro {
+    padding: 0 20px;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: -55px;
+    left: 0; }
+    #MovieStore .big .intro .img {
+      width: 144px;
+      padding-right: 10px; }
+      #MovieStore .big .intro .img img {
+        width: 100%; }
+    #MovieStore .big .intro .right {
+      color: #000; }
+      #MovieStore .big .intro .right h3 {
+        padding-bottom: 30px; }
+      #MovieStore .big .intro .right .min {
+        width: 100%;
+        position: relative; }
+        #MovieStore .big .intro .right .min span {
+          color: #659d0e; }
+        #MovieStore .big .intro .right .min .store {
+          display: block;
+          position: absolute;
+          width: 33px;
+          height: 33px;
+          background: #659d0e;
+          line-height: 40px;
+          text-align: center;
+          top: -18px;
+          right: 0;
+          color: #fff; }
+      #MovieStore .big .intro .right .want, #MovieStore .big .intro .right .com {
+        display: inline-block;
+        font-size: 16px;
+        width: 85px;
+        height: 40px;
+        border-radius: 20px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #ccc; }
+      #MovieStore .big .intro .right .com {
+        color: #659d0e;
+        border: 1px solid #659d0e;
+        margin-left: 10px; }
+    #MovieStore .big .intro p {
+      padding-bottom: 10px; }
+
+#MovieStore .word {
+  width: 100%;
+  text-align: center;
+  color: #ff8600;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-top: 140px; }
+
+#MovieStore .btn {
+  display: block;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 0 20px; }
+  #MovieStore .btn span {
+    display: block;
+    background: #ff8600;
+    border-radius: 20px; }

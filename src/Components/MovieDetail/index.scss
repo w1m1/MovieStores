@@ -1,0 +1,111 @@
+*{
+	box-sizing:border-box;
+}
+#MovieStore{
+	.bg{
+		width:100%;
+		height:120px;
+		background-repeat:no-repeat;
+		background-position:0 -95px;
+		background-size:cover;
+		opacity:.7;
+		filter:blur(5px);
+	}
+	.big{
+		position:relative;
+		.intro{
+			padding:0 20px;
+			font-size:14px;
+			width:100%;
+			display:flex;
+			justify-content:space-around;
+			position:absolute;
+			top:-55px;
+			left:0;
+
+			.img{
+				width:144px;
+
+				padding-right:10px;
+
+				img{
+					width:100%;
+				}
+			}
+			.right{
+				color:#000;
+				h3{
+					// color:black;
+					padding-bottom:30px;
+				}
+				.min{
+					width:100%;
+					position:relative;
+					span{
+						color:#659d0e;
+
+					}
+					.store{
+						display:block;
+						position:absolute;
+						width:33px;
+						height:33px;
+						background:#659d0e;
+						line-height:40px;
+						text-align:center;
+						top:-18px;
+						right:0;
+						color:#fff;
+					}
+				}
+					
+				.want,.com{
+					display:inline-block;
+					font-size:16px;
+					width:85px;
+					height:40px;
+					border-radius:20px;
+					line-height:40px;
+					text-align:center;
+					border:1px solid #ccc;
+				}
+				.com{
+					color:#659d0e;
+					border:1px solid #659d0e;
+					margin-left:10px;
+				}
+			}
+			p{
+				padding-bottom:10px;
+			}
+		}
+	}
+
+
+
+	.word{
+		width:100%;
+		text-align:center;
+		color:#ff8600;
+		padding:10px 0;
+		font-size:16px;
+		margin-top:140px;
+	}
+	.btn{
+		display:block;
+		width:100%;
+		height:45px;
+		line-height:45px;
+		font-size:20px;
+		font-weight:bold;
+		color:white;
+		text-align:center;
+		padding:0 20px;
+		span{
+			display:block;
+			background:#ff8600;
+			border-radius:20px;
+
+		}
+	}
+}

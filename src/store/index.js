@@ -4,9 +4,11 @@ import reduxpromise from 'redux-promise'
 
 import changeNavbar from './reducers/changeNavbar'
 import changeTitle from './reducers/changeTitle'
+import nowplayingMovies from './reducers/nowplayingMovies'
 var reducer = combineReducers({
 	changeNavbar,
-	changeTitle
+	changeTitle,
+	nowplayingMovies
 })
 
 

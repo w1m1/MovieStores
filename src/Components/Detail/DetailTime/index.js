@@ -4,7 +4,9 @@ class Time extends Component{
 	render(){
 		return(
 			<div id="time">
-				时间
+				<ul>
+					<li></li>
+				</ul>	
 			</div>
 			)
 	}
