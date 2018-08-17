@@ -20,9 +20,9 @@ class DetailNavbar extends Component{
 
 			)
 	}
-	componentWillMount(){
+	componentWillReceiveProps(props){
 		this.setState({
-			title : this.props.changeTitle
+			title : props.changeTitle
 		})
 	}
 }

@@ -25,7 +25,7 @@ class NowPlaying extends Component{
 							return (
 								<div className="movie" key={data.id}>
 									<div className="left">
-										<img src={data.img}/>
+										<img alt="" src={data.img}/>
 										{
 											data.isHot?
 											<i className="isHot"></i>
