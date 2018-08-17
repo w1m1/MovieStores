@@ -28,9 +28,19 @@ class CinemaList extends Component{
 					</div>
 				</div>
 				<p className="tip">{this.state.text}</p>
+				{
+					this.state.cinemaList.map(data=>{
+						return <div className="list" key={data.cinemaId?data.cinemaId:data.cid} onClick={this.goDetail.bind(this,data.cinemaId)}>
+							<p>{data.cinameName}</p>
+						</div>
+					})
+				}
 			</div>
 
 			)
+	}
+	goDetail(id){
+		this.props.history.push(`/detail/cinema/${id}`)
 	}
 	sendDate(index,date){
 		this.setState({
