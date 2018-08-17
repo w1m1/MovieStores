@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import {connect} from 'react-redux'
 import axios from 'axios'
+import './index.css'
 
 class CinemaList extends Component{
 	constructor(){
@@ -8,24 +9,34 @@ class CinemaList extends Component{
 		this.state = {
 			cinemaList : [],
 			date : [],
-			text : ''
+			text : '',
+			index : 0
 		}
 	}
 	render(){
 		return (
 			<div id="CinemaList">
-				{	
-					this.state.date.length > 0 ? 
-					this.state.date.map(date=>{
-						return <div class="loopdate">
-							
-						</div>
-					})
-					<p class="tip">{this.state.text}</p>
-				}
+				<div className="swiper-container">
+					<div className="swiper-wrapper">
+					{	
+						this.state.date.length > 0 ? 
+						this.state.date.map((date,index)=>{
+							return <div onClick={this.sendDate.bind(this,index,date)} className={this.state.index===index?"swiper-slide focus":"swiper-slide"} key={date.dateValue}>{date.dateValue}</div>
+								
+						}):null
+					}
+					</div>
+				</div>
+				<p className="tip">{this.state.text}</p>
 			</div>
 
 			)
+	}
+	sendDate(index,date){
+		this.setState({
+			index
+		})
+		console.log(date);
 	}
 	componentWillReceiveProps(props){
 		console.log(props);
@@ -79,6 +90,13 @@ export default connect(
 						cinemaList : res[0].data.cs,
 						date : res[1].data.showtimeDates,
 						text : res[0].data.noticeNotOwn
+					},()=>{
+						console.log(This.state.date);
+						var mySwiper = new window.Swiper('.swiper-container',{
+						  slidesPerView : 2.5,
+						//slidesPerView : 'auto',
+						//slidesPerView : 3.7,
+						})
 					})
 					return {
 						type : "changeTitle",
