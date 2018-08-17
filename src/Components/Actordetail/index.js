@@ -48,7 +48,7 @@ class Actordetail extends Component{
 	}
 
 	componentDidMount(){
-		this.props.achangeNavbar()
+		this.props.changeNavbar()
 		this.props.changeTitle()
 		axios.get(`/Service/callback.mi/Movie/MovieCreditsWithTypes.api?movieId=257529&t=2018817942881996`).then(res=>{
 			console.log(res.data)
