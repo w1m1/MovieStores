@@ -20,6 +20,8 @@ import SelectSeat from '../Components/SelectSeat'
 import Pay from '../Components/Pay'
 import Shop from '../Components/Shop'
 import MovieDetail from '../Components/MovieDetail'
+
+import Actordetail from '../Components/Actordetail'
 import {Provider} from 'react-redux'
 import store from '../store'
 
@@ -50,6 +52,7 @@ const router = (
 					<Route path="/selectseat" component={SelectSeat}/>
 					<Route path="/pay" component={Pay}/>
 					<Route path="/shop" component={Shop}/>
+					<Route path="/moviedetail/:id/fullcredits" component={Actordetail}/>
 					<Route path="/moviedetail/:id" component={MovieDetail}/>
 					
 					<Redirect from="*" to="/index"/>
