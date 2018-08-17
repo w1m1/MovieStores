@@ -28,7 +28,11 @@
         width: 100%; }
     #MovieStore .big .intro .right {
       color: #000; }
+      #MovieStore .big .intro .right h2 {
+        color: #fff;
+        padding-bottom: 5px; }
       #MovieStore .big .intro .right h3 {
+        color: #fff;
         padding-bottom: 30px; }
       #MovieStore .big .intro .right .min {
         width: 100%;
@@ -84,3 +88,181 @@
     display: block;
     background: #ff8600;
     border-radius: 20px; }
+
+#MovieStore .content {
+  background: #fff; }
+  #MovieStore .content .brief {
+    width: 100%;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis; }
+  #MovieStore .content .changeword {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px; }
+
+#MovieStore .actor {
+  width: 100%;
+  background: #fff;
+  margin-top: 20px; }
+  #MovieStore .actor h2 {
+    line-height: 50px;
+    padding: 0 20px; }
+  #MovieStore .actor .per {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    #MovieStore .actor .per .left {
+      width: 40%;
+      border-right: 1px solid #ccc;
+      padding: 0 15px; }
+      #MovieStore .actor .per .left h4 {
+        padding: 5px 0; }
+      #MovieStore .actor .per .left .dir {
+        text-align: center; }
+        #MovieStore .actor .per .left .dir img {
+          width: 100%;
+          margin-bottom: 20px; }
+        #MovieStore .actor .per .left .dir span {
+          display: block; }
+    #MovieStore .actor .per .right {
+      width: 60%; }
+      #MovieStore .actor .per .right h4 {
+        padding: 5px 0; }
+      #MovieStore .actor .per .right .img {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        #MovieStore .actor .per .right .img div {
+          width: 50%; }
+          #MovieStore .actor .per .right .img div span {
+            display: block; }
+        #MovieStore .actor .per .right .img .img1 {
+          margin-bottom: 20px; }
+          #MovieStore .actor .per .right .img .img1 span {
+            margin: 5px 0; }
+          #MovieStore .actor .per .right .img .img1 .span1 {
+            width: 98px;
+            height: 98px;
+            overflow: hidden; }
+            #MovieStore .actor .per .right .img .img1 .span1 img {
+              width: 100%;
+              padding: 5px 8px 5px 8px; }
+        #MovieStore .actor .per .right .img .img2 {
+          margin-bottom: 20px; }
+          #MovieStore .actor .per .right .img .img2 span {
+            margin: 5px 0; }
+          #MovieStore .actor .per .right .img .img2 .span2 {
+            width: 98px;
+            height: 98px;
+            overflow: hidden; }
+            #MovieStore .actor .per .right .img .img2 .span2 img {
+              width: 100%;
+              padding: 5px 8px 5px 8px; }
+
+#MovieStore .images {
+  width: 100%;
+  background: #fff;
+  margin-top: 15px;
+  padding-bottom: 30px; }
+  #MovieStore .images h2 {
+    line-height: 40px;
+    padding: 0 20px; }
+  #MovieStore .images .all {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    #MovieStore .images .all li {
+      flex: 1;
+      width: 80px;
+      height: 80px;
+      padding: 5px; }
+      #MovieStore .images .all li img {
+        width: 100%;
+        height: 100%; }
+
+#MovieStore .movie {
+  width: 100%;
+  padding: 0 10px;
+  background: #fff;
+  margin-top: 10px; }
+  #MovieStore .movie .moviecomment {
+    padding: 20px; }
+  #MovieStore .movie .contents {
+    width: 100%;
+    height: 70px;
+    line-height: 1.5;
+    overflow: hidden;
+    font-size: 16px;
+    margin-top: 10px; }
+  #MovieStore .movie ul {
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    overflow: hidden; }
+    #MovieStore .movie ul .first {
+      float: left;
+      width: 60px;
+      height: 60px;
+      margin-right: 20px; }
+      #MovieStore .movie ul .first img {
+        border-radius: 30px;
+        width: 100%; }
+    #MovieStore .movie ul .sec {
+      float: left;
+      margin-top: 10px; }
+
+#MovieStore .people {
+  width: 100%; }
+  #MovieStore .people h2 {
+    width: 100%;
+    padding: 20px 0;
+    line-height: 50px; }
+  #MovieStore .people .all {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ccc;
+    background: #fff; }
+    #MovieStore .people .all .header {
+      width: 60px;
+      height: 60px; }
+      #MovieStore .people .all .header img {
+        width: 100%;
+        border-radius: 30px; }
+    #MovieStore .people .all .words {
+      width: 80%; }
+      #MovieStore .people .all .words span {
+        display: block; }
+      #MovieStore .people .all .words .first {
+        overflow: hidden; }
+        #MovieStore .people .all .words .first .left {
+          float: left; }
+        #MovieStore .people .all .words .first .right {
+          float: right;
+          position: relative; }
+          #MovieStore .people .all .words .first .right .store {
+            position: absolute; }
+      #MovieStore .people .all .words .sec {
+        padding: 10px 0;
+        line-height: 1.5; }
+      #MovieStore .people .all .words .thr {
+        width: 100%; }
+        #MovieStore .people .all .words .thr span {
+          display: inline-block;
+          float: right;
+          padding: 0 20px; }
+
+#MovieStore .change {
+  float: right;
+  font-size: 30px; }

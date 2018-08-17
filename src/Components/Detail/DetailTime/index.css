@@ -1,0 +1,38 @@
+#time h1, #time h3 {
+  margin: 0; }
+
+#time .content {
+  background: #fff;
+  text-align: center; }
+  #time .content .li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-left: 18px;
+    border-bottom: 1px solid #ccc; }
+    #time .content .li .one h1 {
+      font-size: 24px;
+      line-height: 34px; }
+    #time .content .li .one span {
+      font-size: 14px; }
+    #time .content .li .two p, #time .content .li .two span {
+      font-size: 16px; }
+    #time .content .li .thr h3 {
+      font-size: 20px;
+      line-height: 24px;
+      color: #ff8600; }
+    #time .content .li .thr span {
+      font-weight: 700;
+      color: #777;
+      text-decoration: line-through; }
+    #time .content .li .four {
+      margin-right: 18px; }
+      #time .content .li .four button {
+        border-radius: 20px;
+        height: 34px;
+        width: 88px;
+        line-height: 34px;
+        background: #ff8600;
+        color: #fff;
+        border: 0; }

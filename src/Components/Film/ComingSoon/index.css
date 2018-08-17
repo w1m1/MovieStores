@@ -1,2 +1,106 @@
-#ComingSoon .allMovies .attention{width:100%;padding:10px;box-sizing:border-box}#ComingSoon .allMovies .attention h2{line-height:40px;height:40px}#ComingSoon .allMovies .attention h2 span{color:gray}#ComingSoon .allMovies .attention .famous{width:100%;margin-top:15px;margin-bottom:15px;padding-top:25px;padding-right:20px;border-top:1px solid #ccc;border-right:1px solid #ccc;box-sizing:border-box;position:relative}#ComingSoon .allMovies .attention .famous img{width:35%}#ComingSoon .allMovies .attention .famous div.left{width:65%;box-sizing:border-box;padding:0 10px}#ComingSoon .allMovies .attention .famous div.left p.title{font-size:18px;line-height:27px;font-weight:600}#ComingSoon .allMovies .attention .famous div.left p.type{margin-top:5px;font-size:14px;line-height:26px}#ComingSoon .allMovies .attention .famous div.left p.type span{color:orange}#ComingSoon .allMovies .attention .famous p.date{position:absolute;top:-12px;font-size:18px;left:0;color:gray;padding-right:10px;background:#f5f5f9}#ComingSoon .allMovies .attention .famous div.lefbutton{position:absolute;bottom:0;left:35%;font-size:16px;padding:10px 20px;border-radius:15px;background:orange;color:white}#ComingSoon .allMovies .attention .famous div.rigbutton{position:absolute;bottom:0;right:0;font-size:16px;padding:10px 20px;border-radius:15px;border:1px solid #659c0d;color:#659c0d}#ComingSoon .allMovies .attention .everymounth .mounth{width:100%;line-height:40px;border-bottom:1px solid #ccc}#ComingSoon .allMovies .attention .everymounth .comingMovie{padding:15px 0}#ComingSoon .allMovies .attention .everymounth .comingMovie p.left{width:10%}#ComingSoon .allMovies .attention .everymounth .comingMovie div.right{width:90%}#ComingSoon .allMovies .attention .everymounth .comingMovie div.right img.left{width:25%}#ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left{width:75%;box-sizing:border-box;padding:0 10px}#ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left p.title{font-size:18px;line-height:27px;font-weight:600;height:27px;overflow:hidden}#ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left p.type{margin-top:5px;font-size:14px;line-height:20px}#ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left p.type span{color:orange}#ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left div.button{padding-top:5px;width:100%}#ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left div.button div.lefbutton{float:left;font-size:16px;padding:8px 15px;border-radius:8px;background:orange;color:white}#ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left div.button div.rigbutton{float:right;font-size:16px;padding:8px 15px;border-radius:15px;border:1px solid #659c0d;color:#659c0d}
-/*# sourceMappingURL=index.css.map */
+#ComingSoon .allMovies .attention {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; }
+  #ComingSoon .allMovies .attention h2 {
+    line-height: 40px;
+    height: 40px; }
+    #ComingSoon .allMovies .attention h2 span {
+      color: gray; }
+  #ComingSoon .allMovies .attention .famous {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 25px;
+    padding-right: 20px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative; }
+    #ComingSoon .allMovies .attention .famous img {
+      width: 35%; }
+    #ComingSoon .allMovies .attention .famous div.left {
+      width: 65%;
+      box-sizing: border-box;
+      padding: 0 10px; }
+      #ComingSoon .allMovies .attention .famous div.left p.title {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 600; }
+      #ComingSoon .allMovies .attention .famous div.left p.type {
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 26px; }
+        #ComingSoon .allMovies .attention .famous div.left p.type span {
+          color: orange; }
+    #ComingSoon .allMovies .attention .famous p.date {
+      position: absolute;
+      top: -12px;
+      font-size: 18px;
+      left: 0;
+      color: gray;
+      padding-right: 10px;
+      background: #f5f5f9; }
+    #ComingSoon .allMovies .attention .famous div.lefbutton {
+      position: absolute;
+      bottom: 0;
+      left: 35%;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 15px;
+      background: orange;
+      color: white; }
+    #ComingSoon .allMovies .attention .famous div.rigbutton {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 15px;
+      border: 1px solid #659c0d;
+      color: #659c0d; }
+  #ComingSoon .allMovies .attention .everymounth .mounth {
+    width: 100%;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc; }
+  #ComingSoon .allMovies .attention .everymounth .comingMovie {
+    padding: 15px 0; }
+    #ComingSoon .allMovies .attention .everymounth .comingMovie p.left {
+      width: 10%; }
+    #ComingSoon .allMovies .attention .everymounth .comingMovie div.right {
+      width: 90%; }
+      #ComingSoon .allMovies .attention .everymounth .comingMovie div.right img.left {
+        width: 25%; }
+      #ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left {
+        width: 75%;
+        box-sizing: border-box;
+        padding: 0 10px; }
+        #ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left p.title {
+          font-size: 18px;
+          line-height: 27px;
+          font-weight: 600;
+          height: 27px;
+          overflow: hidden; }
+        #ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left p.type {
+          margin-top: 5px;
+          font-size: 14px;
+          line-height: 20px; }
+          #ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left p.type span {
+            color: orange; }
+        #ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left div.button {
+          padding-top: 5px;
+          width: 100%; }
+          #ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left div.button div.lefbutton {
+            float: left;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 8px;
+            background: orange;
+            color: white; }
+          #ComingSoon .allMovies .attention .everymounth .comingMovie div.right div.left div.button div.rigbutton {
+            float: right;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 15px;
+            border: 1px solid #659c0d;
+            color: #659c0d; }

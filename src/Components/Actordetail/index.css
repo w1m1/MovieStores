@@ -1,0 +1,22 @@
+#Actordetail .head {
+  line-height: 40px; }
+
+#Actordetail ul {
+  width: 100%;
+  display: flex;
+  jusitify-content: space-between;
+  padding: 20px 10px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc; }
+  #Actordetail ul .img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden; }
+    #Actordetail ul .img img {
+      width: 100%; }
+  #Actordetail ul .intro {
+    width: 80%;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-top: 10px;
+    margin-left: 30px; }
