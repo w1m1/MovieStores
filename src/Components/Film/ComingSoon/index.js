@@ -23,7 +23,7 @@ class ComingSoon extends Component{
 					<div className="attention">
 						<h2>最受关注  <span>({this.state.comingsoonMovies.attention.length}部)</span></h2>
 						<div className="famous clear">
-							<img className="left" src={this.state.comingsoonMovies.attention[0].image}/>
+							<img alt="" className="left" src={this.state.comingsoonMovies.attention[0].image}/>
 							<div className="left">
 								<p className="title">{this.state.comingsoonMovies.attention[0].title}</p>
 								<p className="type"><span>{this.state.comingsoonMovies.attention[0].wantedCount}</span>人想看-{this.state.comingsoonMovies.attention[0].type}</p>
@@ -42,13 +42,13 @@ class ComingSoon extends Component{
 										<div className="mounth">{data}月</div>
 										{this.state.comingsoonMovies.moviecomings.map(item=>{
 											return (
-											data==item.rMonth?
-												<div className="comingMovie clear" key={item.id}>
+											data===item.rMonth?
+												<div className="comingMovie clear" key={item.id}  onClick={this.goList.bind(this,item.id)}>
 													<p className="left">
 														{item.rDay}日
 													</p>
 													<div className="right">
-														<img src={item.image} className="left"/>
+														<img alt="" src={item.image} className="left"/>
 														<div className="left">
 															<p className="title">{item.title}</p>
 															<p className="type"><span>{item.wantedCount}</span>人想看-{item.type}</p>
@@ -80,6 +80,9 @@ class ComingSoon extends Component{
 			</div>
 
 			)
+	}
+	goList(movieid){
+		this.props.history.push(`/cinemalist/${movieid}`)
 	}
 	componentDidMount(){
 		console.log(this.props);

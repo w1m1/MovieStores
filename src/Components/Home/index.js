@@ -27,7 +27,7 @@ class Home extends Component{
 							if(index<8){
 								return (
 									<div className="movies" key={data.id} onClick={this.toMovieDetail.bind(this,data.id)}>
-										<img  src={data.img} />
+										<img  alt=""  src={data.img} />
 										<p>{data.t}</p>
 										{data.r>1?<span>{data.r}</span>:null}
 									</div>
@@ -46,7 +46,7 @@ class Home extends Component{
 							if(index<8){
 								return (
 									<div className="movies" key={data.id} onClick={this.toMovieDetail.bind(this,data.id)}>
-										<img  src={data.image} />
+										<img  alt=""  src={data.image} />
 										<p>{data.title}</p>
 									</div>
 									)
@@ -54,7 +54,7 @@ class Home extends Component{
 						})
 					}
 				</div>
-				<img className="duiqi" src={this.state.newsimg}/>
+				<img  alt="" className="duiqi" src={this.state.newsimg}/>
 				<div className="daynews">
 					<div className="head">
 						<h2>今日热点</h2>
@@ -64,7 +64,7 @@ class Home extends Component{
 							return (
 								<div className="news" key={item.id}>
 									<div className="left">
-										<img src={item.img}/>
+										<img  alt="" src={item.img}/>
 									</div>
 									<div className="right">
 										<h3>{item.title}</h3>
@@ -97,7 +97,7 @@ class Home extends Component{
 			this.setState({
 				nowplaying : res[0].data.ms,
 				daynews : res[1].data.hotPoints,
-				newsimg : res[2].data.areaFirst.image,
+				newsimg: res[2].data.areaFirst.image,
 				comingsoon: res[3].data.moviecomings,
 				animating : false
 			})

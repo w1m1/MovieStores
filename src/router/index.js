@@ -42,8 +42,8 @@ const router = (
 							</Film>
 							)
 					}}/>
-					<Route path="/cinemalist" component={CinemaList}/>
 					<Route path="/cinemalist/:movieid" component={CinemaList}/>
+					<Route path="/cinemalist" component={CinemaList}/>
 					<Route path="/mine" component={Mine}/>
 					<Route path="/detail/cinema/:cinemaId/movie/:movieId" component={Detail}/>
 					<Route path="/detail/cinema/:cinemaId" component={Detail}/>
