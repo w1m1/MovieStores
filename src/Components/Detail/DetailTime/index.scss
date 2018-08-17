@@ -1,3 +1,56 @@
 #time{
+	h1,h3{
+		margin:0;
+	}
 	
+	.content{
+		background:#fff;
+		text-align: center;
+		.li{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding:15px 0;
+			margin-left:18px;
+			border-bottom:1px solid #ccc;
+			.one{
+				h1{
+					font-size:24px;
+					line-height: 34px;
+				}
+				span{
+					font-size:14px;
+				}
+			}
+			.two{
+				p,span{
+					font-size:16px;
+				}
+			}
+			.thr{
+				h3{
+					font-size:20px;
+					line-height: 24px;
+					color:#ff8600;
+				}
+				span{
+					font-weight: 700;
+					color:#777;
+					text-decoration: line-through;
+				}
+			}
+			.four{
+				margin-right:18px;
+				button{
+					border-radius:20px;
+					height:34px;
+					width:88px;
+					line-height: 34px;
+					background: #ff8600;
+				    color: #fff;
+				    border:0;
+				}
+			}
+		}
+	}
 }

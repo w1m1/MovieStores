@@ -85,3 +85,19 @@
     margin-right: 10px;
     font-size: 30px;
     color: #ccc; }
+
+#Detail ul.date {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+  white-space: nowrap; }
+  #Detail ul.date li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 54px; }
+  #Detail ul.date .active {
+    border-bottom: 2px solid #1e7dd7;
+    font-weight: bold;
+    color: #1e7dd7; }

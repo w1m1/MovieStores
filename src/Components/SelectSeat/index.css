@@ -1,0 +1,39 @@
+#SelectSeat {
+  background: #fff; }
+  #SelectSeat .top {
+    padding: 21px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+    #SelectSeat .top p {
+      height: 21px;
+      background: url("https://static1.mtime.cn/html5/20180727153608/images/2014/screen.png") no-repeat top center;
+      background-size: 100% auto;
+      width: 100%; }
+    #SelectSeat .top h3 {
+      font-weight: 100;
+      font-size: 14px; }
+    #SelectSeat .top span {
+      line-height: 22px;
+      color: #ccc; }
+    #SelectSeat .top i {
+      position: absolute;
+      right: 28px;
+      bottom: 10px;
+      font-size: 30px;
+      color: #2a8cce; }
+  #SelectSeat .content {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px; }
+    #SelectSeat .content .left {
+      background: #858585;
+      z-index: 1;
+      border-radius: 20px;
+      margin-left: 10px;
+      width: 20px;
+      text-align: center;
+      line-height: 16px;
+      font-size: 12px;
+      color: #dcdcdc; }
