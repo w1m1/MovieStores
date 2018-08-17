@@ -1,0 +1,103 @@
+#Detail .swiper-container {
+  width: 100%;
+  height: 100%;
+  background: #828282;
+  padding: 18px 0 5px 0; }
+  #Detail .swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column; }
+    #Detail .swiper-container .swiper-slide .img {
+      width: 90px;
+      position: relative;
+      overflow: hidden;
+      height: 126px; }
+      #Detail .swiper-container .swiper-slide .img img {
+        width: 100%;
+        min-height: 126px; }
+      #Detail .swiper-container .swiper-slide .img em {
+        font-style: normal;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        display: inline-block;
+        background: #659d0e;
+        color: #fff;
+        line-height: 22px;
+        font-size: 12px;
+        padding: 0 5px; }
+      #Detail .swiper-container .swiper-slide .img .block {
+        display: none; }
+      #Detail .swiper-container .swiper-slide .img span {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0; }
+      #Detail .swiper-container .swiper-slide .img .bg {
+        background: rgba(0, 0, 0, 0.4); }
+      #Detail .swiper-container .swiper-slide .img .bg1 {
+        background: rgba(0, 0, 0, 0);
+        border: 2px solid #fff; }
+    #Detail .swiper-container .swiper-slide div:nth-of-type(2) {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 14px; }
+    #Detail .swiper-container .swiper-slide .p {
+      color: #fff; }
+    #Detail .swiper-container .swiper-slide .p1 {
+      color: #828282; }
+
+#Detail .title {
+  text-align: center;
+  padding: 15px 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #Detail .title .left {
+    flex: 1; }
+    #Detail .title .left h1 {
+      font-size: 18px;
+      margin: 0; }
+    #Detail .title .left p {
+      line-height: 20px;
+      font-size: 14px;
+      color: #777; }
+  #Detail .title i {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #ccc; }
+
+#Detail ul.date {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+  white-space: nowrap; }
+  #Detail ul.date li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 54px; }
+  #Detail ul.date .active {
+    border-bottom: 2px solid #1e7dd7;
+    font-weight: bold;
+    color: #1e7dd7; }

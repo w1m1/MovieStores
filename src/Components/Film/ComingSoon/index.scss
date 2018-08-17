@@ -1,0 +1,137 @@
+#ComingSoon{
+	.allMovies{
+		.attention{
+			width:100%;
+			padding:10px;
+			box-sizing:border-box;
+			h2{
+				line-height:40px;
+				height:40px;
+				span{
+					color:gray;
+				}
+			}
+			.famous{
+				width:100%;
+				margin-top:15px;
+				margin-bottom:15px;
+				padding-top:25px;
+				padding-right:20px;
+				border-top:1px solid #ccc;
+				border-right:1px solid #ccc;
+				box-sizing:border-box;
+				position:relative;
+				img{
+					width:35%;
+				}
+				div.left{
+					width:65%;
+					box-sizing:border-box;
+					padding:0 10px;
+					p.title{
+						font-size:18px;
+						line-height:27px;
+						font-weight:600;
+					}
+					p.type{
+						margin-top:5px;
+						font-size:14px;
+						line-height:26px;
+						span{
+							color:orange;
+						}
+					}
+
+				}
+				p.date{
+					position:absolute;
+					top:-12px;
+					font-size:18px;
+					left:0;
+					color:gray;
+					padding-right:10px;
+					background:#f5f5f9;
+				}
+				div.lefbutton{
+					position:absolute;
+					bottom:0;
+					left:35%;
+					font-size:16px;
+					padding:10px 20px ;
+					border-radius:15px;
+					background:orange;
+					color:white;
+				}
+				div.rigbutton{
+					position:absolute;
+					bottom:0;
+					right:0;
+					font-size:16px;
+					padding:10px 20px ;
+					border-radius:15px;
+					border:1px solid #659c0d;
+					color:#659c0d;
+				}
+			}
+			.everymounth{
+				.mounth{
+					width:100%;
+					line-height:40px;
+					border-bottom:1px solid #ccc;
+				}
+				.comingMovie{
+					padding:15px 0;
+					p.left{
+						width:10%;
+					}
+					div.right{
+						width:90%;
+						img.left{
+							width:25%;
+						}
+						div.left{
+							width:75%;
+							box-sizing:border-box;
+							padding:0 10px;
+							p.title{
+								font-size:18px;
+								line-height:27px;
+								font-weight:600;
+								height:27px;
+								overflow:hidden;
+							}
+							p.type{
+								margin-top:5px;
+								font-size:14px;
+								line-height:20px;
+								span{
+									color:orange;
+								}
+							}
+							div.button{
+								padding-top:5px;
+								width:100%;
+								div.lefbutton{
+									float:left;
+									font-size:16px;
+									padding:8px 15px ;
+									border-radius:8px;
+									background:orange;
+									color:white;
+								}
+								div.rigbutton{
+									float:right;
+									font-size:16px;
+									padding:8px 15px ;
+									border-radius:15px;
+									border:1px solid #659c0d;
+									color:#659c0d;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

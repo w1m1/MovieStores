@@ -1,4 +1,4 @@
-const nowplayingMovies = (prevState=[],action=[])=>{
+const nowplayingReducer = (prevState=[],action=[])=>{
 	let {type,payload} = action;
 	console.log(payload);
 	switch(type){
@@ -8,4 +8,4 @@ const nowplayingMovies = (prevState=[],action=[])=>{
 		return prevState
 	}
 }
-export default nowplayingMovies
+export default nowplayingReducer

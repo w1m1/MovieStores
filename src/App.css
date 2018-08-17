@@ -19,3 +19,8 @@ html,body{ height:100%; background:#f0efed;}
 
 .left{float: left !important;}
 .right{float: right !important;}
+.clear::after{
+	content: "";
+	display: block;
+	clear:both;
+}
