@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import axios from "axios"
 import {ActivityIndicator} from 'antd-mobile';
+import {connect} from 'react-redux'
 import "./index.css"
 
 class NowPlaying extends Component{
@@ -88,15 +89,40 @@ class NowPlaying extends Component{
 			)
 	}
 	componentDidMount(){
-		axios.get("/Service/callback.mi/Showtime/LocationMovies.api?locationId=290&t=2018815112784965").then(res=>{
-			console.log(res.data);
+		if(this.props.movieList.length==0){
+			this.props.setNowplaying(this)
+		}else{
 			this.setState({
 				animating:false,
-				movieList : res.data.ms
+				movieList : this.props.movieList
 			})
-		})
+		}
 
 	}
 }
 
-export default NowPlaying
+export default connect(
+	state=>{
+		return {
+			movieList : state.nowplayingReducer
+		}
+	},
+	{
+		setNowplaying(data){
+			let This = data;
+			return (dispatch)=>{
+				axios.get("/Service/callback.mi/Showtime/LocationMovies.api?locationId=290&t=2018815112784965").then(res=>{
+					console.log(res.data);
+					This.setState({
+						animating:false,
+						movieList : res.data.ms
+					})
+					return dispatch({
+						type:"nowplaying",
+						payload : res.data.ms
+					})
+				})
+			}
+		}
+	}
+	)(NowPlaying)

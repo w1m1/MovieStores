@@ -1,14 +1,16 @@
 import {createStore,combineReducers,applyMiddleware,compose} from 'redux'
-import thunk from 'redux-thunk'
-import reduxpromise from 'redux-promise'
+import thunk from "redux-thunk";
+import reduxpromise from "redux-promise";
 
 import changeNavbar from './reducers/changeNavbar'
 import changeTitle from './reducers/changeTitle'
-import nowplayingMovies from './reducers/nowplayingMovies'
+import nowplayingReducer from './reducers/nowplayingMovies'
+import comingsoonReducer from './reducers/comingsoon'
 var reducer = combineReducers({
 	changeNavbar,
 	changeTitle,
-	nowplayingMovies
+	nowplayingReducer,
+	comingsoonReducer
 })
 
 

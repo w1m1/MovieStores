@@ -20,11 +20,7 @@ html,body{ height:100%; background:#f0efed;}
 .left{float: left !important;}
 .right{float: right !important;}
 .clear::after{
-	content:'';
-	display:block;
-	visibility: hidden;
-	font-size:0;
-	height:0;
+	content: "";
+	display: block;
 	clear:both;
-	line-height:0;
 }
