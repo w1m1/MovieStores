@@ -10,7 +10,8 @@ class CinemaList extends Component{
 			cinemaList : [],
 			date : [],
 			text : '',
-			index : 0
+			index : 0,
+			movieId : null
 		}
 	}
 	render(){
@@ -31,7 +32,35 @@ class CinemaList extends Component{
 				{
 					this.state.cinemaList.map(data=>{
 						return <div className="list" key={data.cinemaId?data.cinemaId:data.cid} onClick={this.goDetail.bind(this,data.cinemaId)}>
-							<p>{data.cinameName}</p>
+							<p className="cinemaname">{data.cinameName?data.cinameName:data.cn}
+							<span>{data.minPrice/100}元起</span></p>
+							<p className="location">{data.address}</p>
+							{
+								data.feature.has3D?
+								<span className="ishas">3D</span>
+								:null
+							}
+							{
+								data.feature.hasFeature4K?
+								<span className="ishas">4K</span>
+								:null
+							}
+							{
+								data.feature.hasIMAX?
+								<span className="ishas">IMAX</span>
+								:null
+							}
+							{
+								data.feature.hasVIP?
+								<span className="ishas">VIP</span>
+								:null
+							}
+							{
+								data.feature.hasLoveseat?
+								<span className="ishas">情侣座</span>
+								:null
+							}
+
 						</div>
 					})
 				}
@@ -47,6 +76,12 @@ class CinemaList extends Component{
 			index
 		})
 		console.log(date);
+		axios.get(`/api/proxy/ticket/Showtime/LocationMovieShowtimes.api?locationId=290&movieId=${this.state.movieId}&date=${date.dateValue.replace(/-/g,'')}&_=1534464899693`).then(res=>{
+			console.log(res.data);
+			this.setState({
+				cinemaList : res.data.cs
+			})
+		})
 	}
 	componentWillReceiveProps(props){
 		console.log(props);
@@ -65,6 +100,9 @@ class CinemaList extends Component{
 		if(this.props.match.params.movieid){
 			// console.log(this.props.match.params.movieid,123);
 			this.props.changeNavbar("Detail");
+			this.setState({
+				movieId : this.props.match.params.movieid
+			})
 			this.props.changeTitle(this.props.match.params.movieid,this,today);
 			// this.props.changeTitle()
 		}else{

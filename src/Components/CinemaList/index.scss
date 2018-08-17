@@ -10,4 +10,38 @@
 		border-bottom:2px solid deepskyblue;
 		color:deepskyblue;
 	}
+	.tip{
+		width:100%;
+		line-height:24px;
+		text-align:center;
+		background:#ddd;
+		color:gray;
+	}
+	.list{
+		width:100%;
+		box-sizing:border-box;
+		padding:15px;
+		border-bottom:1px solid #ccc;
+		.cinemaname{
+			font-size:18px;
+			line-height:30px;
+			span{
+				color:orange;
+				float:right;
+			}
+		}
+		.location{
+			color:gray;
+			font-size:14px;
+			line-height:28px;
+		}
+		span.ishas{
+			font-size:12px;
+			margin-top:8px;
+			margin-right:5px;
+			padding:0 2px;
+			border:1px solid #6d8297;
+			color:#6d8297;
+		}
+	}
 }
